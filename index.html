@@ -1,0 +1,60 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Html 5 y CSS</title>
+<LINK href="estilo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <header class="estilo_bloque">
+           <img class="img-circulo" src="img/foto_perfil.jpg">
+           <p>Christopher Orlando Jiménez Pérez</p>
+       </header>
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Programacion Web</td></tr>
+               <tr><td>Asp</td><td>Jsp</td></tr>
+               <tr><td>Php</td><td>Ruby</td></tr>
+               <tr><td>Python</td><td>Go</td></tr>
+           </table>
+       </div>
+
+       <div class="estilo_bloque">
+      
+        <form>
+      <input type="text" id="nombre" name="txt_nombres" placeholder="Ingrese Nombres" onchange="mensaje()" required>
+      <input type="text" id="ape" name="txt_apellidos" placeholder="Ingrese Apellidos" onchange="mensaje()" required>
+      <input type="number" id="num" name="txt_telefono" placeholder="Ingrese Numero Telefonico" onchange="mensaje(this.value)" required>
+      <input type="email" id="emai" name="txt_correo" placeholder="Ingrese Correo Electronico" onchange="mensaje(this.value)" required>
+      <input type="date" id="fn" name="txt_fn" placeholder="Ingrese Fecha Nacimiento"onchange="mensaje(this.value)" required>
+      <textarea name="txt_mensaje" id="men" placeholder="Ingrese el Mensaje" onchange="mensaje(this.value)" ></textarea>
+      <input type="submit"  id="demo" class="boton" >
+            
+    </form>
+    </form>
+    <script>
+    
+    
+    function mensaje() {
+        var x = document.getElementById("nombre");
+        var x2 = document.getElementById("ape");
+        var x3 = document.getElementById("num");
+        var x4 = document.getElementById("emai");
+        var x5 = document.getElementById("fn");
+        var x6 = document.getElementById("men");
+        alert(x.value + '\n' + x2.value +'\n'+ x3.value + '\n' + x4.value +'\n'+ x5.value + '\n' + x6.value)
+    }
+    
+    
+    </script>   
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Redes Sociales</h3>
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/twitter.png"></a>
+       </div>
+    </body>
+   
+    <footer>
+            <p  align=center>Primer Exmane Parcial
+                 Desarrollo Web &copy;</p>
+    </footer>
+</html>
